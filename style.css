@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+body{
+    
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    overflow: hidden;
+}
+.conteiner .image{
+    width: 50%;
+}
+.conteiner .image img{
+    width: 100%;
+    display: block;
+}
+.conteiner .image img .mobile {
+    display: none;
+}
+.conteiner .card{
+    width: 50%;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.conteiner .card h6{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+h1{
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+p{
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+h2{
+    font-size: 32px;
+    line-height: 32px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+h2 span{
+    font-family:'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+a{
+    display: flex;
+    line-height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    margin-top: 26px;
+    transition-duration: 200ms;
+}
+a:hover{
+    background-color: #1A4031;
+}
+a img{
+    display: block;
+}
+
+@media only screen and ( max-width:600px ){
+    body{
+        height: auto;
+        padding: 28px 16px;
+    }
+    .conteiner{
+        flex-direction: column;
+        height: auto;
+    }
+    .conteiner .image{
+        width: 100%;
+    }
+    .conteiner .image img.desktop{
+        display: none;
+    }
+    .conteiner .image img.mobile{
+        display: block;
+    }
+    .conteiner .card{
+        width: 100%;
+        padding: 25px;
+    }
+}
