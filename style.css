@@ -73,11 +73,13 @@ h2{
     display: flex;
     gap: 16px;
     align-items: center;
+    color: hsl(158, 36%, 37%);
 }
 h2 span{
     font-family:'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: normal;
+    text-decoration: line-through;
 }
 a{
     display: flex;
