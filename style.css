@@ -49,12 +49,13 @@ body{
     justify-content: center;
 }
 .conteiner .card h6{
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: normal;
     margin-bottom: 24px;
 }
+
 h1{
     font-family: 'Fraunces', sans-serif;
     color: hsl(212, 21%, 14%);
@@ -68,6 +69,7 @@ p{
     margin-bottom: 30px;
 }
 h2{
+    font-family: 'Fraunces', sans-serif;
     font-size: 32px;
     line-height: 32px;
     display: flex;
@@ -92,6 +94,7 @@ a{
     border-radius: 8px;
     margin-top: 26px;
     transition-duration: 200ms;
+    font-weight: 600;
 }
 a:hover{
     background-color: #1A4031;
